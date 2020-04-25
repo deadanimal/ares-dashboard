@@ -26,37 +26,10 @@ const routes: Routes = [
         loadChildren: "./pages/dashboards/dashboards.module#DashboardsModule"
       },
       {
-        path: "components",
-        loadChildren: "./pages/components/components.module#ComponentsModule"
-      },
-      {
-        path: "forms",
-        loadChildren: "./pages/forms/forms.module#FormsModules"
-      },
-      {
-        path: "tables",
-        loadChildren: "./pages/tables/tables.module#TablesModule"
-      },
-      {
-        path: "maps",
-        loadChildren: "./pages/maps/maps.module#MapsModule"
-      },
-      {
-        path: "widgets",
-        loadChildren: "./pages/widgets/widgets.module#WidgetsModule"
-      },
-      {
-        path: "charts",
-        loadChildren: "./pages/charts/charts.module#ChartsModule"
-      },
-      {
-        path: "calendar",
-        loadChildren: "./pages/calendar/calendar.module#CalendarModule"
-      },
-      {
-        path: "examples",
-        loadChildren: "./pages/examples/examples.module#ExamplesModule"
-      }
+        path: "databases",
+        loadChildren: "./pages/databases/databases.module#DatabasesModule"
+      },      
+
     ]
   },
   {
@@ -64,7 +37,7 @@ const routes: Routes = [
     component: AuthLayoutComponent,
     children: [
       {
-        path: "examples",
+        path: "authentication",
         loadChildren:
           "./layouts/auth-layout/auth-layout.module#AuthLayoutModule"
       }

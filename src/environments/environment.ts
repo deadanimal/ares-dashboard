@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  authUrl: 'http://127.0.0.1:8000/auth/',
+  apiUrl: 'http://127.0.0.1:8000/v1/',
   production: false
 };
 
